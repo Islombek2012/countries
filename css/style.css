@@ -1,0 +1,244 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Nunito Sans', sans-serif;
+      color: #111517;
+}
+*:focus{
+      outline: none;
+}
+a{
+      text-decoration: none;
+}
+html{
+      font-size: 10px;
+}
+.container{
+      max-width: 1310px;
+      margin: 0 auto;
+      padding: 0 10px;
+}
+.site-header{
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 100;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.0532);
+}
+.navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+}
+.nav-left h1{
+      font-size: 24px;
+      color: #111517;
+}
+.nav-right a{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+}
+.nav-right span{
+      font-size: 16px;
+      color: #111517;
+}
+.site-main{
+      padding-top: 48px;
+}
+.search{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4.8rem;
+  }
+  .search-left{
+      width: 48rem;
+      padding: 1.8rem 3.2rem;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 0.5rem;
+      z-index: 100;
+      box-shadow: 0 2px 9px  rgba(0, 0, 0, 0.0294);
+  }
+  .search-left img{
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 2.4rem;
+  }
+  .search-left input{
+      width: 80%;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      color: #848484;
+      border: none;
+      background: transparent;
+  }
+  .search-left input::placeholder{
+      color: #848484;
+  }
+  .search-right{
+      width: 200px;
+      background-color: #fff;
+      padding: 1.8rem 2.4rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.0532);
+  }
+  select:nth-child(1){
+      border: none;
+  }
+  .cards{
+      margin-bottom: 45px;
+  }
+  .cards-content{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+      gap: 75px;
+  }
+  .card{
+      width: 264px;
+      background-color: #fff;
+      justify-self: center;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.0294);
+  }
+  .card-text{
+      padding: 24px;
+  }
+  .card h2{
+      line-height: 26px;
+      font-size: 18px;
+      color: #111517;
+  }
+  .p{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+  }
+  .p p{
+      font-size: 14px;
+      line-height: 16px;
+      color: #111517;
+  }
+  .about-main{
+    padding-top: 80px;
+  }
+  .about{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding-top: 80px;
+  }
+  .about-right{
+     display: flex;
+    align-items: center;
+    gap: 120px;
+  }
+  .texts{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .about-text1{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 249px;
+  }
+  .about-text1 h1{
+    font-size: 32px;
+    color: #111517;
+  }
+  .about-p p{
+    font-size: 16px;
+    line-height: 32px;
+    color: #848484;
+  }
+  .about-p span{
+    color: #111517;
+  }
+  
+  .about-text2 p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #848484;
+  }
+  .about-text2 span{
+    color: #111517;
+  }
+  .spans{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 68px;
+  }
+  .spans h2{
+    font-size: 16px;
+    line-height: 24px;
+    color: #111517;
+  }
+  .spans span{
+    width: 96px;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 28px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    z-index: 100;
+    box-shadow: 10px 10px 9px  rgba(0, 0, 0, 0.0294);
+  }
+  .back{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    z-index: 100;
+    box-shadow: 0px 5px 9px  rgba(0, 0, 0, 0.0294);
+    border: none;
+    padding: 10px 30px;
+    margin-left: 20px;
+  }
+  @media(max-width:960px){
+      .cards-content{
+          gap: 5.5rem;
+      }
+      .about{
+        flex-wrap: wrap;
+      }
+      .about-left img{
+        width: 100%;
+        height: auto;
+      }
+  }
+  @media(max-width:750px){
+      .search{
+          flex-wrap: wrap;
+      }
+      .navbar{
+        flex-wrap: wrap;
+      }
+      .texts{
+        flex-wrap: wrap;
+      }
+      
+      .search-left{
+          width: 100%;
+          margin-bottom: 4rem;
+      }
+      .cards-content{
+          gap: 4rem;
+      }
+  }
+  @media(max-width:480px){
+    .spans{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+  
